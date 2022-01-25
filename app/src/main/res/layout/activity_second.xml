@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:weightSum="11"
+    >
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:weightSum="8">
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:background="#00ff0000"
+            android:drawableBottom="@drawable/ic_baseline_menu_24"
+
+            />
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="5">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="모든 메모"
+                android:textColor="#000000"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="휴대폰"
+                android:textSize="10sp"
+                />
+        </LinearLayout>
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:background="#00ff0000"
+            android:drawableBottom="@drawable/ic_baseline_camera_alt_24"
+
+            />
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:background="#00ff0000"
+            android:drawableBottom="@drawable/ic_baseline_search_24"
+
+            />
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:background="#00ff0000"
+            android:drawableBottom="@drawable/ic_baseline_trash_24"
+
+            />
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:background="#00ff0000"
+            android:drawableBottom="@drawable/ic_baseline_menu_custom"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E4E4E4">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/listview_main"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:textSize="50dp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginBottom="45dp"
+        android:weightSum="8">
+        <TextView
+            android:layout_weight="5"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/btn_write"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:background="#00ff0000"
+            android:drawableRight="@drawable/pink_add_button"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:weightSum="11"
+    >
+
+    <LinearLayout
+        android:layout_weight="0.8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:weightSum="8">
+
+        <Button
+            android:id="@+id/btn_main_not"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:background="#00ff0000"
+            android:drawableBottom="@drawable/ic_baseline_check_24"
+
+            />
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:background="#00ff0000"
+            android:drawableBottom="@drawable/ic_baseline_turn_left_24"
+
+            />
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:background="#00ff0000"
+            android:drawableBottom="@drawable/ic_baseline_turn_right_24"
+
+            />
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:background="#00ff0000"
+            android:drawableBottom="@drawable/pink_circle"
+            />
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:background="#00ff0000"
+            android:drawableBottom="@drawable/pink_pencil"
+
+            />
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:background="#00ff0000"
+            android:drawableBottom="@drawable/pink_eraser"
+
+            />
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:background="#00ff0000"
+            android:drawableBottom="@drawable/pink_bubble"
+
+            />
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:background="#00ff0000"
+            android:drawableBottom="@drawable/ic_baseline_menu_custom"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E4E4E4">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/show_txt"
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="50dp"
+        android:textColor="@color/black">
+
+    </TextView>
+
+
+
+
+
+</LinearLayout>
